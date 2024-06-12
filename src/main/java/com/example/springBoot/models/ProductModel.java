@@ -1,6 +1,8 @@
 package com.example.springBoot.models;
 
 import jakarta.persistence.*;
+
+
 import org.springframework.hateoas.RepresentationModel;
 
 import java.io.Serializable;
@@ -61,5 +63,6 @@ public class ProductModel extends RepresentationModel<ProductModel> implements S
     public void setValue(BigDecimal value) {
         this.value = value;
     }
+
 
 }
