@@ -27,7 +27,7 @@ public class ProductService {
         if (product == null) {
             throw new IllegalArgumentException("Produto não pode ser nulo");
         }
-
+        System.out.println(product.toString());
         if (product.getValue() == null || product.getValue().compareTo(BigDecimal.ZERO) <= 0) {
             throw new IllegalArgumentException("Preço do produto inválido");
         }
